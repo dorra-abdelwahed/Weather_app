@@ -9,17 +9,47 @@ import SwiftUI
 
 struct WeatherView: View {
     
-    @State private var progress = 0.4
+    @ObservedObject var weatherVM = WeatherViewModel()
     
     var body: some View {
         
         VStack {
             
-            Spacer()
-            
-            ProgressView("Loading...", value: progress, total: 1)
-                .progressViewStyle(BarProgressStyle(height: 30))
-            
+            if weatherVM.progress == 0 {
+                ForEach(weatherVM.weathers, id: \.id) { weather in
+                    VStack(alignment: .leading) {
+                        
+                        WeatherRow(weather: weather,
+                                   weatherVM: weatherVM)
+                        
+                        Divider()
+                    }
+                }
+                
+                Spacer()
+                
+                // reset button
+                Button {
+                    weatherVM.fetchWeather()
+                    weatherVM.displayMessages()
+                } label: {
+                    Text("Reset")
+                        .foregroundColor(.white)
+                        .bold()
+                        .padding()
+                        .background(Color.purple)
+                        .cornerRadius(10)
+                        .shadow(color: Color.gray.opacity(0.5), radius: 5, x: 5, y: 5)
+                }
+                
+            } else {
+                
+                Spacer()
+                
+                ProgressView(weatherVM.message, value: weatherVM.progress, total: 1)
+                    .progressViewStyle(BarProgressStyle(height: 30))
+                    .frame(maxWidth: .infinity, alignment: .bottom)
+            }
         }
         .padding()
     }

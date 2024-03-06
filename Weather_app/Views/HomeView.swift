@@ -12,19 +12,25 @@ struct HomeView: View {
     var body: some View {
         
         VStack(spacing: 20) {
-           
-            Text("Bonjour, veuillez cliquer sur le bouton ci-dessous.")
+            
+            Image("weather")
+                .resizable()
+                .frame(width: 200, height: 200)
+                .padding(.bottom, 50)
+            
+            Text("Hi, tap the weather button to instantly uncover forecasts.")
+                .foregroundColor(.purple)
                 .multilineTextAlignment(.center)
-                .bold()
+                .font(.title)
             
             NavigationLink {
                 WeatherView()
             } label: {
-                Text("Commencez")
+                Text("Weather")
                     .foregroundColor(.white)
                     .bold()
                     .padding()
-                    .background(Color.blue)
+                    .background(Color.purple.opacity(0.6))
                     .cornerRadius(10)
                     .shadow(color: Color.gray.opacity(0.5), radius: 5, x: 5, y: 5)
             }
