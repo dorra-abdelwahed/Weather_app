@@ -21,17 +21,17 @@ struct WeatherRow: View {
             
             Spacer()
             
-            // Convert Kelvin to Celsius
-            Text("\(String(format: "%.0f°", weather.main.temperature - 273.15))")
-            
-            Spacer()
-            
-            Image(systemName: weatherVM.imageForWeatherCondition(weather.weather.first?.main))
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 25, height: 25)
+            HStack(spacing: 20) {
+                // Convert Kelvin to Celsius
+                Text("\(String(format: "%.0f°", weather.main.temperature - 273.15))")
+                
+                Image(systemName: weatherVM.imageForWeatherCondition(weather.weather.first?.main))
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 25, height: 25)
+            }
         }
-        .padding(.vertical)
+        .padding()
         
     }
 }

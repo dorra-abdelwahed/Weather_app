@@ -30,14 +30,15 @@ struct WeatherView: View {
                 
                 // reset button
                 Button {
+                    weatherVM.weathers = []
                     weatherVM.fetchWeather()
                     weatherVM.displayMessages()
                 } label: {
-                    Text("Reset")
+                    Text("Restart")
                         .foregroundColor(.white)
                         .bold()
                         .padding()
-                        .background(Color.purple)
+                        .background(Color("pink"))
                         .cornerRadius(10)
                         .shadow(color: Color.gray.opacity(0.5), radius: 5, x: 5, y: 5)
                 }

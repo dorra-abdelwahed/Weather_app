@@ -9,7 +9,7 @@ import SwiftUI
 
 struct BarProgressStyle: ProgressViewStyle {
     
-    var color: Color = .purple
+    var color: Color = Color("pink")
     var height: Double = 20.0
     
     func makeBody(configuration: Configuration) -> some View {
@@ -19,6 +19,8 @@ struct BarProgressStyle: ProgressViewStyle {
         GeometryReader { geometry in
             
             VStack(alignment: .leading) {
+                
+                Spacer() // Add Spacer to push the progress bar to the bottom
                 
                 configuration.label
                     .font(.body)

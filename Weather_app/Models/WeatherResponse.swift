@@ -10,27 +10,17 @@ import Foundation
 struct WeatherResponse: Codable {
     
     let id: Int
-    let date: Date
     let main: Main
     let weather: [Weather]
-    let coord: Coord
     let name: String
     
     enum CodingKeys: String, CodingKey {
         case id
-        case date = "dt"
         case main
         case weather
-        case coord
         case name
     }
     
-}
-
-struct Coord: Codable{
-    
-    let lon: Double
-    let lat: Double
 }
 
 
