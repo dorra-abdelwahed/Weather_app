@@ -4,6 +4,7 @@
 
 ### - Display of current weather conditions.
 ### - Interactive progress bar.
+### - App available in English & French.
 
 ## screenshots
 
