@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  Weather_app
+
+  Created by dorra ben abdelwahed on 7/3/2024.
+  
+*/
+
+"We are downloading the data…" = "We are downloading the data…";
+"It's almost finished…" = "It's almost finished…";
+"Just a few seconds left before getting the result…" = "Just a few seconds left before getting the result…";
+
+
+"Hi, tap the weather button to instantly uncover forecasts." = "Hi, tap the weather button to instantly uncover forecasts.";
+
+"Weather" = "Weather";
+"Restart" = "Restart";

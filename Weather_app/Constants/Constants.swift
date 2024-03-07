@@ -18,12 +18,6 @@ let cities = [
     "Lyon"
 ]
 
-//let messages = [
-//    "Nous téléchargeons les données…",
-//    "C’est presque fini…",
-//    "Plus que quelques secondes avant d’avoir le résultat…"
-//]
-
 let messages = [
     "We are downloading the data…",
     "It's almost finished…",

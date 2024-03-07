@@ -47,7 +47,7 @@ struct WeatherView: View {
                 
                 Spacer()
                 
-                ProgressView(weatherVM.message, value: weatherVM.progress, total: 1)
+                ProgressView(LocalizedStringKey(weatherVM.message), value: weatherVM.progress, total: 1)
                     .progressViewStyle(BarProgressStyle(height: 30))
                     .frame(maxWidth: .infinity, alignment: .bottom)
             }
