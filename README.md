@@ -1,10 +1,13 @@
 # iOS app with MVVM architecture
 
+#### xcode 14.2
+#### ios 16.2
+
 ## Features
 
-### - Display of current weather conditions.
-### - Interactive progress bar.
-### - App available in English & French.
+#### - Display of current weather conditions.
+#### - Interactive progress bar.
+#### - App available in English & French.
 
 ## screenshots
 
