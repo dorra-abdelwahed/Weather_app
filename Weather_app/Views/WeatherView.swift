@@ -9,13 +9,13 @@ import SwiftUI
 
 struct WeatherView: View {
     
-    @ObservedObject var weatherVM = WeatherViewModel()
+    @StateObject var weatherVM = WeatherViewModel()
     
     var body: some View {
         
         VStack {
             
-            if weatherVM.progress == 0 {
+            if weatherVM.weathers.count == 5 {
                 ForEach(weatherVM.weathers, id: \.id) { weather in
                     VStack(alignment: .leading) {
                         
