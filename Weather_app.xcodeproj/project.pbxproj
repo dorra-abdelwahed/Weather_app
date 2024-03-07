@@ -24,6 +24,7 @@
 		8BC7EF3B2B99FF3900AE8F16 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8BC7EF3D2B99FF3900AE8F16 /* Localizable.strings */; };
 		8BC7EF402B9A568800AE8F16 /* WeatherViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC7EF3F2B9A568800AE8F16 /* WeatherViewModelTests.swift */; };
 		8BC7EF442B9A823E00AE8F16 /* Weather_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC7EF432B9A823E00AE8F16 /* Weather_appUITests.swift */; };
+		8BC7EF462B9A849A00AE8F16 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8BC7EF452B9A849900AE8F16 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		8BC7EF3E2B99FF3F00AE8F16 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8BC7EF3F2B9A568800AE8F16 /* WeatherViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModelTests.swift; sourceTree = "<group>"; };
 		8BC7EF432B9A823E00AE8F16 /* Weather_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather_appUITests.swift; sourceTree = "<group>"; };
+		8BC7EF452B9A849900AE8F16 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +161,7 @@
 				8B904A012B97AF3400159CD8 /* Weather_appApp.swift */,
 				8B904A072B97AF3700159CD8 /* Weather_app.entitlements */,
 				8B904A082B97AF3700159CD8 /* Preview Content */,
+				8BC7EF452B9A849900AE8F16 /* README.md */,
 			);
 			path = Weather_app;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 			files = (
 				8B904A0A2B97AF3700159CD8 /* Preview Assets.xcassets in Resources */,
 				8BC7EF3B2B99FF3900AE8F16 /* Localizable.strings in Resources */,
+				8BC7EF462B9A849A00AE8F16 /* README.md in Resources */,
 				8B904A062B97AF3700159CD8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
