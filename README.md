@@ -1,5 +1,6 @@
 # iOS app with MVVM architecture
 
+#### Swift || SwiftUI
 #### xcode 14.2
 #### ios 16.2
 
